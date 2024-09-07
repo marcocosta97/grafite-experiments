@@ -45,6 +45,10 @@ Note that the overall execution time of the experiments is approximately **72 ho
 - The pairwise-independent hash function of Grafite makes use of random coefficients, so the results may vary slightly between different runs. However, they should be consistent with the ones reported in the paper. For more information, see [Section 3, Hashing input keys] of the paper.
 - There could be some slightly differences in Proteus plots as their [choice of the sample](https://github.com/Erins-Ransom/Proteus/blob/7580c5b8d184afd19f3fdaf10f782344bdf552f5/include/util.hpp#L57) for the modeling of the data structure is done using a `std::default_random_engine` RNG, which is not guaranteed to be the same across different platforms (see [here](https://en.cppreference.com/w/cpp/numeric/random)). However, the results should be consistent with the ones reported in the paper.
 - In our experiments, we used NUMA to bind the processes to the cores, which may not be available on all systems. The script will still run without NUMA. If you want to use it, you need to enable it manually from [here](https://github.com/marcocosta97/grafite/blob/7f7552da4ce602b96d24f67466ed828aeda44e4c/bench/scripts/execute_tests.sh#L29).
+- This script has been fully tested on the following machines:
+  - Machine 1: (CPU: Intel Xeon E5-2650Lv3 @ 1.80 GHz, RAM: 64 GB, OS: Ubuntu 20.04.4 LTS, Docker version: 26.1.3)
+  - Machine 2: (CPU: Intel Xeon Gold 6140M CPU @ 2.30GHz, RAM: 1.17 TB, OS: CentOS Linux release 7.9.2009, Docker version: 26.1.4)
+  - Machine 3: (CPU: Intel Xeon Gold 6140M CPU @ 2.30GHz, RAM: 1.2 TB, OS: CentOS Linux release 7.9.2009, Docker version: 25.0.3)
 
 ## License
 
