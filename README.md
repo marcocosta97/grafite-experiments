@@ -28,7 +28,7 @@ The total execution time of the experiments is approximately **72 hours**, thoug
 
 Upon completion, the pdf of the paper, the plots and the raw results in csv format will be available in the `paper_results` folder. The detailed description of the generated figures and tables can be found [here](https://github.com/marcocosta97/grafite/blob/main/bench/reproducibility.md#figures-and-tables).
 
-Close the container and free the resources using the following command:
+To remove the Docker container and free up resources, use the following commands:
 ```bash
 docker rm grafite-exp
 docker rmi grafite-experiments
